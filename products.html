@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Shop toy cars at TurboToys. Explore racing cars, police cars, trucks and remote control toys.">
+
+    <title>TurboToys | Products</title>
+
+       <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            🚗 Turbo<span>Toys</span>
+        </a>
+
+        <nav class="navbar" aria-label="Main Navigation">
+
+            <a href="index.html">Home</a>
+
+            <a href="products.html" class="active">
+                Products
+            </a>
+
+            <a href="about.html">About</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="cart.html" class="cart-link">
+                🛒 Cart
+                <span id="cart-count">0</span>
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="page-banner">
+
+        <div class="container">
+
+            <p>OUR COLLECTION</p>
+
+            <h1>Toy Cars</h1>
+
+            <p>
+                Find the perfect ride for your little driver.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="filter-bar">
+
+                <div>
+
+                    <label for="category-filter">
+                        Filter by category:
+                    </label>
+
+                    <select id="category-filter">
+
+                        <option value="all">
+                            All Products
+                        </option>
+
+                        <option value="Racing">
+                            Racing
+                        </option>
+
+                        <option value="Off-Road">
+                            Off-Road
+                        </option>
+
+                        <option value="Emergency">
+                            Emergency
+                        </option>
+
+                        <option value="Construction">
+                            Construction
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <p id="product-result">
+                    12 products
+                </p>
+
+            </div>
+
+
+            <div class="product-grid" id="product-list">
+
+                <!-- PRODUCT 1 -->
+
+                <article class="product-card"
+                    data-category="Racing">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/speed racer.jpg"
+                            alt="Speed Racer X"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            Racing
+                        </span>
+
+                        <h3 class="product-name">
+                            Speed Racer X
+                        </h3>
+
+                        <p class="product-description">
+                            A fast and colourful racing car for little drivers.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                £14.99
+                            </span>
+
+                            <button
+                                class="add-cart-btn"
+                                type="button"
+                                onclick="addToCart(1)"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 2 -->
+
+                <article class="product-card"
+                    data-category="Racing">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/turbo red racer.jpg"
+                            alt="Turbo Red Racer"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            Racing
+                        </span>
+
+                        <h3 class="product-name">
+                            Turbo Red Racer
+                        </h3>
+
+                        <p class="product-description">
+                            A sporty racing car designed for exciting play.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                £17.99
+                            </span>
+
+                            <button
+                                class="add-cart-btn"
+                                type="button"
+                                onclick="addToCart(2)"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 3 -->
+
+                <article class="product-card"
+                    data-category="Off-Road">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/monster.jpg"
+                            alt="Monster Off-Roader"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            Off-Road
+                        </span>
+
+                        <h3 class="product-name">
+                            Monster Off-Roader
+                        </h3>
+
+                        <p class="product-description">
+                            A tough off-road vehicle for adventurous play.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                £21.99
+                            </span>
+
+                            <button
+                                class="add-cart-btn"
+                                type="button"
+                                onclick="addToCart(3)"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 4 -->
+
+                <article class="product-card"
+                    data-category="Emergency">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/police patrol car.webp"
+                            alt="Police Patrol Car"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            Emergency
+                        </span>
+
+                        <h3 class="product-name">
+                            Police Patrol Car
+                        </h3>
+
+                        <p class="product-description">
+                            A police vehicle for exciting rescue adventures.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                £16.99
+                            </span>
+
+                            <button
+                                class="add-cart-btn"
+                                type="button"
+                                onclick="addToCart(4)"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 5 -->
+
+                <article class="product-card"
+                    data-category="Emergency">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/Fire Rescue Truck.jpg"
+                            alt="Fire Rescue Truck"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            Emergency
+                        </span>
+
+                        <h3 class="product-name">
+                            Fire Rescue Truck
+                        </h3>
+
+                        <p class="product-description">
+                            A bright rescue vehicle for imaginative play.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                £19.99
+                            </span>
+
+                            <button
+                                class="add-cart-btn"
+                                type="button"
+                                onclick="addToCart(5)"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 6 -->
+
+                <article class="product-card"
+                    data-category="Construction">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/Construction Truck.jpg"
+                            alt="Construction Truck"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            Construction
+                        </span>
+
+                        <h3 class="product-name">
+                            Construction Truck
+                        </h3>
+
+                        <p class="product-description">
+                            A construction vehicle for little builders.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                £18.99
+                            </span>
+
+                            <button
+                                class="add-cart-btn"
+                                type="button"
+                                onclick="addToCart(6)"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 7 -->
+
+                <article class="product-card"
+                    data-category="Racing">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/drift car.jpg"
+                            alt="Blue Drift Car"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            Racing
+                        </span>
+
+                        <h3 class="product-name">
+                            Blue Drift Car
+                        </h3>
+
+                        <p class="product-description">
+                            A cool blue car made for racing fans.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                £15.99
+                            </span>
+
+                            <button
+                                class="add-cart-btn"
+                                type="button"
+                                onclick="addToCart(7)"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 8 -->
+
+                <article class="product-card"
+                    data-category="Off-Road">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/Adventure Jeep.webp"
+                            alt="Adventure Jeep"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            Off-Road
+                        </span>
+
+                        <h3 class="product-name">
+                            Adventure Jeep
+                        </h3>
+
+                        <p class="product-description">
+                            An adventure jeep for exciting journeys.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                £22.99
+                            </span>
+
+                            <button
+                                class="add-cart-btn"
+                                type="button"
+                                onclick="addToCart(8)"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 9 -->
+
+                <article class="product-card"
+                    data-category="Emergency">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/Rescue Ambulance.jpg"
+                            alt="Rescue Ambulance"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            Emergency
+                        </span>
+
+                        <h3 class="product-name">
+                            Rescue Ambulance
+                        </h3>
+
+                        <p class="product-description">
+                            A rescue ambulance for emergency adventures.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                £17.49
+                            </span>
+
+                            <button
+                                class="add-cart-btn"
+                                type="button"
+                                onclick="addToCart(9)"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 10 -->
+
+                <article class="product-card"
+                    data-category="Racing">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/Mini Formula Car.jpg"
+                            alt="Mini Formula Car"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            Racing
+                        </span>
+
+                        <h3 class="product-name">
+                            Mini Formula Car
+                        </h3>
+
+                        <p class="product-description">
+                            A Formula-style car for young racing fans.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                £24.99
+                            </span>
+
+                            <button
+                                class="add-cart-btn"
+                                type="button"
+                                onclick="addToCart(10)"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 11 -->
+
+                <article class="product-card"
+                    data-category="Construction">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/bulldozer.jpg"
+                            alt="Yellow Bulldozer"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            Construction
+                        </span>
+
+                        <h3 class="product-name">
+                            Yellow Bulldozer
+                        </h3>
+
+                        <p class="product-description">
+                            A fun bulldozer for construction adventures.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                £20.49
+                            </span>
+
+                            <button
+                                class="add-cart-btn"
+                                type="button"
+                                onclick="addToCart(11)"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCT 12 -->
+
+                <article class="product-card"
+                    data-category="Off-Road">
+
+                    <div class="product-image">
+
+                        <img
+                            src="images/Rock Crawler.jpg"
+                            alt="Rock Crawler"
+                        >
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            Off-Road
+                        </span>
+
+                        <h3 class="product-name">
+                            Rock Crawler
+                        </h3>
+
+                        <p class="product-description">
+                            A powerful crawler for adventurous play.
+                        </p>
+
+                        <div class="product-bottom">
+
+                            <span class="product-price">
+                                £26.99
+                            </span>
+
+                            <button
+                                class="add-cart-btn"
+                                type="button"
+                                onclick="addToCart(12)"
+                            >
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <a href="index.html" class="logo footer-logo">
+                🚗 Turbo<span>Toys</span>
+            </a>
+
+            <p>
+                Fun cars and exciting toys for little drivers.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>📧 hello@turbotoys.com</p>
+            <p>📞 01234 567890</p>
+            <p>📍 United Kingdom</p>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+
+        <p>
+            &copy; 2026 TurboToys. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+ <script src="js/script.js"></script>
+
+</body>
+</html>
